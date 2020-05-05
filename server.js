@@ -12,8 +12,12 @@ app.set('views', './app/views');
 
 
 //rotas
-app.get('/', function(re, res){
+app.get('/', function(req, res){
     res.render('index.ejs');
+});
+
+app.get('/status', function(req, res){
+    res.render('status.ejs');
 });
 
 app.listen(3000, function(){

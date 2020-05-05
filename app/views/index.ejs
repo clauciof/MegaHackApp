@@ -27,7 +27,10 @@
                             <a class="nav-item nav-link active  ml-5" href="#" style="color: #FF3366;">Categorias  </a> 
                             <a class="nav-item nav-link active  ml-2" href="#" style="color: #FF3366;">Produtos  </a>
                             <a class="nav-item nav-link active  ml-2" href="#" style="color: #FF3366;">Ofertas  </a>
-                            <a class="nav-item nav-link active  ml-2" href="#" style="color: #FF3366;">Meus pedidos  </a>
+                            <form action="/status" method="GET">
+                                <input type="submit" class="nav-item nav-link active  ml-2 btn btn-link"  style="color: #FF3366;" value="Meus pedidos"/>
+                            </form>
+                                                    
                         </div>        
                     </div>
 
@@ -137,6 +140,7 @@
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
+    
     </script>
 
 
